@@ -16,10 +16,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: url("images/background.jpg");
     color: #fff;
     z-index: 2;
     transition: 0.4s;
+    overflow: hidden;
 }
 
 .showcase.active {
@@ -40,7 +40,6 @@
 
 .logo{
     text-transform: uppercase;
-    cursor: pointer;
 }
 
 .toggle{
@@ -61,23 +60,12 @@
     background-position: center;
 }
 
-.showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-}
-
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #03a9fa;
     mix-blend-mode: overlay;
 }
 
@@ -115,6 +103,15 @@
 
 .text a:hover {
     letter-spacing: 6px;
+}
+
+.background-image {
+    width: 110%;
+    height: 110%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: url('https://images.unsplash.com/photo-1452723312111-3a7d0db0e024?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450.jpg') no-repeat left center / cover;
 }
 
 .social {
