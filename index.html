@@ -23,6 +23,21 @@
         <a href="#about">About me</a>
       </div>
 
+      <div class="background-image">
+        <script>
+          const bg = document.querySelector(".background-image");
+          const windowWidth = window.innerWidth / 5;
+          const windowHeight = window.innerHeight / 5;
+
+          bg.addEventListener("mousemove", (e) => {
+            const mouseX = e.clientX / windowWidth;
+            const mouseY = e.clientY / windowHeight;
+
+            bg.style.transform = `translate3d(-${mouseX}%, -${mouseY}%, 0)`;
+          });
+        </script>
+      </div>
+
       <ul class="social">
         <li>
           <a
@@ -43,7 +58,7 @@
           /></a>
         </li>
         <li>
-          <a href="mailto:sai.10@iitj.ac.in" target="_blank"
+          <a href="mailto:sai.10@iitj.ac.in"
             ><img
               src="images/gmail.png"
               alt="gamil account"
