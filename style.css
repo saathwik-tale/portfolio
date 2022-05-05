@@ -8,7 +8,7 @@
 }
 
 .showcase{
-    position: absolute;
+    position: relative;
     right: 0;
     width: 100%;
     min-height: 100vh;
@@ -79,6 +79,7 @@
     font-weight: 800;
     line-height: 1em;
     text-transform: uppercase;
+    z-index: 9;
 }
 
 .text h3 {
@@ -127,7 +128,6 @@
 
 .social li a {
     display: inline-block;
-    filter: invert();
     margin-right: 2px;
     transform: scale(0.5);
     transition: 0.2s;
@@ -160,7 +160,7 @@
 }
 
 .menu ul li a:hover {
-    color: #03a9fa;
+    color: #0c569b;
 }
 
 .about {
@@ -171,7 +171,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 110vh;
+    top: 100vh;
     background-color: #fff;
     transition: 0.4s;
 }
@@ -182,14 +182,12 @@
     border-radius: 200px;
 }
 
-
 .about .text h3 {
     position: relative;
     text-align: center;
     font-family: "Poppins";
     font-size: 3em;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     color: #111;
 }
 
@@ -198,8 +196,8 @@
     text-align: center;
     font-family: 'Poppins';
     font-size: 1.5em;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding-top:  10px;
+    padding-bottom: 20px;
     color: #111;
 }
 
